@@ -87,7 +87,7 @@ Purse.prototype.cancel = function(options, cb) {
  *   data
  */
 Purse.prototype._request = function(options, cb) {
-  var url = this.options.url + '/wallets/' + options.wallet_id + '/' + options.method;
+  var url = this.options.url + '/queue/' + options.wallet_id + '/' + options.method;
   var self = this;
   request
     .post(url)
